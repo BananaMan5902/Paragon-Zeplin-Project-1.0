@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bomber Zeppelin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div class="logo">💣</div>
+    <h1>BOMBER ZEPPELIN</h1>
+    <p class="subtitle">Your slideshow is entering the danger zone.</p>
+
+    <label for="slidesUrl">Google Slides presentation link</label>
+    <input
+      id="slidesUrl"
+      type="url"
+      placeholder="Paste your Google Slides link here..."
+    >
+
+    <button id="connectBtn" class="secondary">
+      🔐 Connect Google Account
+    </button>
+
+    <div id="accountStatus" class="status">
+      Not connected
+    </div>
+
+    <button id="previewBtn">🔎 Preview Presentation</button>
+
+    <div id="preview" class="preview">
+      Paste a presentation link to get started.
+    </div>
+
+    <label for="emoji">Explosion emoji</label>
+    <select id="emoji">
+      <option value="💥">💥 Explosion</option>
+      <option value="💣">💣 Bomb</option>
+      <option value="🔥">🔥 Fire</option>
+      <option value="☄️">☄️ Comet</option>
+      <option value="💥🔥💣">💥🔥💣 All three</option>
+    </select>
+
+    <button id="bombBtn" class="danger" disabled>
+      💥 BOMBER ZEPPELIN!
+    </button>
+
+    <p class="warning">
+      ⚠️ This replaces slide contents. Make a copy of your
+      presentation before proceeding.
+    </p>
+
+    <div id="message" role="status" aria-live="polite"></div>
+  </main>
+</body>
+</html>
